@@ -8,7 +8,7 @@ const products = [
     brand: 'Nike',
     category: 'Basketball',
     price: 130,
-    countInStock: 10,
+    countInStock: 0,
     rating: 4.5,
     numReviews: 12
   },
