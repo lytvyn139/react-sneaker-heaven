@@ -6,8 +6,8 @@ import {
   Image,
   ListGroup,
   Card,
-  Button,
-  ListGroupItem
+  Button
+  // ListGroupItem
 } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import products from '../products';
@@ -49,7 +49,6 @@ const ProductScreen = ({ match }) => {
                   </Col>
                 </Row>
               </ListGroup.Item>
-
               <ListGroup.Item>
                 <Row>
                   <Col>Status:</Col>
@@ -58,7 +57,6 @@ const ProductScreen = ({ match }) => {
                   </Col>
                 </Row>
               </ListGroup.Item>
-
               <ListGroup.Item>
                 <Row>
                   <Col>
