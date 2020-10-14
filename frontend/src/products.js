@@ -9,7 +9,7 @@ const products = [
     category: 'Basketball',
     price: 130,
     countInStock: 10,
-    rating: 5,
+    rating: 4.5,
     numReviews: 12
   },
   {
@@ -53,7 +53,7 @@ const products = [
   },
   {
     _id: '5',
-    name: 'Nike ISPA Zoom Road Warrior',
+    name: 'Nike ISPA Road Warrior',
     image: '/images/ispa-zoom.jpg',
     description:
       'Today"s environment has complex problems that need sophisticated solutions. The Nike ISPA Zoom Road Warrior scavenges parts from your favorite footwear designs for a collective mix of materials in shoe form.',
@@ -66,7 +66,7 @@ const products = [
   },
   {
     _id: '6',
-    name: 'NikeCourt Air Zoom Vapor Cage 4',
+    name: 'NikeCourt Vapor Cage 4',
     image: '/images/nikecourt-air.jpg',
     description:
       'The NikeCourt Air Zoom Vapor Cage 4 is innovated to withstand your toughest matches—thanks to an updated design that puts flexible, durable materials exactly where they"re needed the most.',
