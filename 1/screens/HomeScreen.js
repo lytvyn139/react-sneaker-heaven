@@ -8,11 +8,10 @@ const HomeScreen = () => {
   const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.productList);
-  /* coming from productReducers.js */
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    dispatch(listProducts());
+    dispatch(listProducts);
   }, [dispatch]);
 
   return (
