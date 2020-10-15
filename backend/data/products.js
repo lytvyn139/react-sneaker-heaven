@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Kyrie 6 N7",
     image: "/images/kyrie.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Nike Romaleos 4 AMP",
     image: "/images/romaleos-4.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "3",
     name: "KD13",
     image: "/images/kd13.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "4",
     name: "Nike Air Max 97",
     image: "/images/air-max97.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 44,
   },
   {
-    _id: "5",
     name: "Nike ISPA Road Warrior",
     image: "/images/ispa-zoom.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "NikeCourt Vapor Cage 4",
     image: "/images/nikecourt-air.jpg",
     description:
