@@ -7,12 +7,23 @@ import {
   productDetailsReducer
 } from './reducers/productReducers';
 
+import { cartReducer } from './reducers/cartReducers';
+
 const reducer = combineReducers({
   productList: productListReducer,
-  productDetails: productDetailsReducer
+  productDetails: productDetailsReducer,
+  cart: cartReducer
 });
 
-const initialState = {}; //will load when redux store loads
+//comming from cartActions.js
+const cartItemFromStorage = localStorage.getItem('cartItems')
+  ? JSON.parse(localStorage.getItem('cartItems'))
+  : [];
+
+//will load when redux store loads
+const initialState = {
+  cart: { cartItems: 'hello' }
+};
 
 const middleware = [thunk];
 
