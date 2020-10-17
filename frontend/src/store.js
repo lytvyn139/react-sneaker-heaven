@@ -16,13 +16,13 @@ const reducer = combineReducers({
 });
 
 //comming from cartActions.js
-const cartItemFromStorage = localStorage.getItem('cartItems')
+const cartItemsFromStorage = localStorage.getItem('cartItems')
   ? JSON.parse(localStorage.getItem('cartItems'))
   : [];
 
 //will load when redux store loads
 const initialState = {
-  cart: { cartItems: 'hello' }
+  cart: { cartItems: cartItemsFromStorage }
 };
 
 const middleware = [thunk];
