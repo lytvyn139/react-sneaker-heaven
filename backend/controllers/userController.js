@@ -2,7 +2,7 @@ import asyncHandler from "express-async-handler";
 import generateToken from "../utils/generateToken.js";
 import User from "../models/userModel.js";
 
-// (Auth user & get token)PUBLIC|GET|/api/users/loign
+// (Auth user & get token)PUBLIC|POST|/api/users/loign
 const authUser = asyncHandler(async (req, res) => {
   // comming from postman (BODY,raw,json)
   const { email, password } = req.body;
@@ -14,6 +14,7 @@ const authUser = asyncHandler(async (req, res) => {
       email: user.email,
       isAdmin: user.isAdmin,
       token: generateToken(user._id),
+      //is email+pass=matched we generate the token
     });
   } else {
     res.status(401);
@@ -21,4 +22,8 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-export { authUser };
+// (Get user profile)PRIVATE|GET|/api/users/loign
+const getUserProfile = asyncHandler(async (req, res) => {
+  res.send("successe");
+});
+export { authUser, getUserProfile };
