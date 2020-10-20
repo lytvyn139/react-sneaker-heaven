@@ -4,6 +4,7 @@ import colors from "colors";
 import connectDB from "./config/db.js";
 import productRouter from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 dotenv.config();
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
 /* thats why path was removed in productRouter */
 app.use("/api/products", productRouter);
 app.use("/api/users", userRoutes);
+app.use("/api/orders", orderRoutes);
 
 // ERROR HANDLER MIDDLEWARE from middleware/errorMiddleware.js
 app.use(notFound);
