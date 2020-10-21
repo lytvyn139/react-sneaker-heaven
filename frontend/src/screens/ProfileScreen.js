@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import { getUserDetails, updateUserProfile } from '../actions/userActions';
+import { getUserDetails, updateUser } from '../actions/userActions';
 import { listMyOrders } from '../actions/orderActions';
 
 const ProfileScreen = ({ location, history }) => {
@@ -45,7 +45,7 @@ const ProfileScreen = ({ location, history }) => {
     if (password !== confirmPassword) {
       setMessage('Passwords do not match');
     } else {
-      dispatch(updateUserProfile({ id: user._id, name, email, password }));
+      dispatch(updateUser({ id: user._id, name, email, password }));
     }
   };
 

@@ -9,7 +9,6 @@ export const cartReducer = (
   state = { cartItems: [], shippingAddress: {} },
   action
 ) => {
-  //cartItems: [] because there will be a lot of items
   switch (action.type) {
     case CART_ADD_ITEM:
       const item = action.payload;
@@ -39,7 +38,6 @@ export const cartReducer = (
         ...state,
         shippingAddress: action.payload
       };
-
     case CART_SAVE_PAYMENT_METHOD:
       return {
         ...state,
