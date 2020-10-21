@@ -23,12 +23,12 @@ const ProductListScreen = ({ history, match }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
-  // const productDelete = useSelector((state) => state.productDelete);
-  // const {
-  //   loading: loadingDelete,
-  //   error: errorDelete,
-  //   success: successDelete
-  // } = productDelete;
+  const productDelete = useSelector((state) => state.productDelete);
+  const {
+    loading: loadingDelete,
+    error: errorDelete,
+    success: successDelete
+  } = productDelete;
 
   // const productCreate = useSelector((state) => state.productCreate);
   // const {
@@ -66,12 +66,12 @@ const ProductListScreen = ({ history, match }) => {
     } else {
       history.push('/login');
     }
-  }, [dispatch, history, userInfo]);
+  }, [dispatch, history, userInfo, successDelete]);
 
   const deleteHandler = (id) => {
-    // if (window.confirm('Are you sure')) {
-    //   dispatch(deleteProduct(id));
-    // }
+    if (window.confirm('Are you sure')) {
+      dispatch(deleteProduct(id));
+    }
   };
 
   const createProductHandler = () => {
@@ -90,9 +90,9 @@ const ProductListScreen = ({ history, match }) => {
           </Button>
         </Col>
       </Row>
-      {/* {loadingDelete && <Loader />}
+      {loadingDelete && <Loader />}
       {errorDelete && <Message variant='danger'>{errorDelete}</Message>}
-      {loadingCreate && <Loader />}
+      {/*     {loadingCreate && <Loader />}
       {errorCreate && <Message variant='danger'>{errorCreate}</Message>}
       {loading ? (
         <Loader /> 
@@ -137,7 +137,6 @@ const ProductListScreen = ({ history, match }) => {
         </Table>
         {/* <Paginate pages={pages} page={page} isAdmin={true} /> */}
       </>
-      )}
     </>
   );
 };

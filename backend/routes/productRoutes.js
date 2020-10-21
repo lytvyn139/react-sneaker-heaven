@@ -2,17 +2,12 @@ import express from "express";
 import {
   getProducts,
   getProductById,
+  deleteProduct,
 } from "../controllers/productController.js";
 const router = express.Router();
-
-/* before 
-app.get("/api/products", (req, res) => {
-removed path, because we gonna point to this file
-
-and then all moved to productRoutes
-   */
+import { protect, admin } from "../middleware/authMiddleware.js";
 
 router.route("/").get(getProducts);
-router.route("/:id").get(getProductById);
+router.route("/:id").get(getProductById).delete(protect, admin, deleteProduct);
 
 export default router;
