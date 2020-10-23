@@ -22,7 +22,12 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <i className='fas fa-shopping-cart'></i> Sneaker Heaven
+              <img
+                className='logo'
+                src='https://i.ibb.co/jr8zryp/logo.png'
+                alt='nike logo'
+              />
+              Sneaker Heaven
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

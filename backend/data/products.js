@@ -25,7 +25,7 @@ const products = [
   },
 
   {
-    name: "NikeCourt Vapor Cage 4",
+    name: "NikeCourt Vapor Cage",
     image: "/images/nikecourt-air.jpg",
     description:
       'The NikeCourt Air Zoom Vapor Cage 4 is innovated to withstand your toughest matches—thanks to an updated design that puts flexible, durable materials exactly where they"re needed the most.',
@@ -113,7 +113,7 @@ const products = [
   },
   ////////////////////////////////
   {
-    name: "Nike Air Zoom Alphafly NEXT%",
+    name: "Nike Air Zoom Alphafly",
     image: "/images/alphafly.jpg",
     description: "Coming Soon",
     brand: "Nike",
@@ -136,7 +136,7 @@ const products = [
     numReviews: 1,
   },
   {
-    name: "Nike Air Zoom Pegasus Turbo III",
+    name: "Nike Air Zoom Pegasus",
     image: "/images/pegasus.jpg",
     description:
       "The Nike Zoom Pegasus Turbo 2 is updated with a featherlight upper, while innovative foam brings revolutionary responsiveness to your long distance training.",

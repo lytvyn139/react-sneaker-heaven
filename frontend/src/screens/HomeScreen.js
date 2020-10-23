@@ -37,7 +37,7 @@ const HomeScreen = ({ match }) => {
         </Link>
       )}
       {/* CAROUSEL*/}
-      <h1>Latest Products</h1>
+      <h1 className='text-center'> Latest Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (
