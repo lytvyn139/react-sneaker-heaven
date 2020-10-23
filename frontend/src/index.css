@@ -26,6 +26,7 @@ h2 {
 .carousel-item.active {
   display: flex;
 }
+
 .carousel-caption {
   position: absolute;
   top: 0;
@@ -36,10 +37,10 @@ h2 {
 }
 
 .carousel img {
-  height: 300px;
+  height: 250px;
   padding: 30px;
   margin: 40px;
-  border-radius: 50%;
+  border-radius: 15%;
 }
 .carousel a {
   margin: 0 auto;

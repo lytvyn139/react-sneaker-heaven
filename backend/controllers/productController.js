@@ -1,6 +1,7 @@
 import asyncHandler from "express-async-handler";
 import Product from "../models/productModel.js";
 
+// PAGINATION
 const getProducts = asyncHandler(async (req, res) => {
   const pageSize = 6;
   const page = Number(req.query.pageNumber) || 1;
@@ -130,8 +131,9 @@ const createProductReview = asyncHandler(async (req, res) => {
   }
 });
 
+// CAROUSEL
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({}).sort({ rating: -1 }).limit(3);
+  const products = await Product.find({}).sort({ rating: -1 }).limit(5);
 
   res.json(products);
 });

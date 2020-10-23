@@ -20,7 +20,7 @@ const products = [
     category: "Basketball Shoes",
     price: 160,
     countInStock: 3,
-    rating: 5,
+    rating: 4.6,
     numReviews: 8,
   },
 
@@ -32,8 +32,8 @@ const products = [
     brand: "Nike",
     category: "Tennis shoes",
     price: 150,
-    countInStock: 1,
-    rating: 4.2,
+    countInStock: 2,
+    rating: 4.9,
     numReviews: 2,
   },
 
@@ -46,7 +46,7 @@ const products = [
     category: "Training Shoes",
     price: 210,
     countInStock: 4,
-    rating: 4.2,
+    rating: 4.9,
     numReviews: 3,
   },
   {
@@ -58,7 +58,7 @@ const products = [
     category: "Training Shoes",
     price: 100,
     countInStock: 3,
-    rating: 3.2,
+    rating: 4.9,
     numReviews: 3,
   },
   /////////////////////////////
@@ -70,8 +70,8 @@ const products = [
     brand: "Nike",
     category: "Lifestyle Shoes",
     price: 180,
-    countInStock: 16,
-    rating: 4.7,
+    countInStock: 6,
+    rating: 5,
     numReviews: 44,
   },
   {
@@ -96,7 +96,7 @@ const products = [
     category: "Lifestyle Shoes",
     price: 90,
     countInStock: 5,
-    rating: 4.3,
+    rating: 4.8,
     numReviews: 3,
   },
   {
@@ -136,7 +136,7 @@ const products = [
     numReviews: 1,
   },
   {
-    name: "Nike Air MNike Zoom Pegasus Turbo 2ax III",
+    name: "Nike Air Zoom Pegasus Turbo III",
     image: "/images/pegasus.jpg",
     description:
       "The Nike Zoom Pegasus Turbo 2 is updated with a featherlight upper, while innovative foam brings revolutionary responsiveness to your long distance training.",
