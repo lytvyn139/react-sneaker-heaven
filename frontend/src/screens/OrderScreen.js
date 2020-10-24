@@ -180,7 +180,7 @@ const OrderScreen = ({ match, history }) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${order.shippingPrice}</Col>
+                  <Col>FREE</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
