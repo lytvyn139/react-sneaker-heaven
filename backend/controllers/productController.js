@@ -3,7 +3,7 @@ import Product from "../models/productModel.js";
 
 // PAGINATION
 const getProducts = asyncHandler(async (req, res) => {
-  const pageSize = 6;
+  const pageSize = 8;
   const page = Number(req.query.pageNumber) || 1;
 
   const keyword = req.query.keyword

@@ -1,17 +1,5 @@
 const products = [
   {
-    name: "Kyrie 6 N7",
-    image: "/images/kyrie.jpg",
-    description:
-      "Celebrate the proud history of Native Americans and Indigenous peoples in North America with the Nike Kyrie 6 N7.",
-    brand: "Nike",
-    category: "Basketball Shoes",
-    price: 130,
-    countInStock: 0,
-    rating: 4.5,
-    numReviews: 12,
-  },
-  {
     name: "KD13",
     image: "/images/kd13.jpg",
     description:
@@ -19,7 +7,7 @@ const products = [
     brand: "Nike",
     category: "Basketball Shoes",
     price: 160,
-    countInStock: 3,
+    countInStock: 0,
     rating: 4.6,
     numReviews: 8,
   },
@@ -49,18 +37,7 @@ const products = [
     rating: 4.9,
     numReviews: 3,
   },
-  {
-    name: "Nike Lunar Vapor Ultrafly Elite 3",
-    image: "/images/vapo.jpg",
-    description:
-      "Built for acceleration, the Nike Lunar Vapor Ultrafly Elite 3 helps keep you light on your feet. Lunarlon foam and a hybrid stud pattern give you comfort and traction.",
-    brand: "Nike",
-    category: "Training Shoes",
-    price: 100,
-    countInStock: 3,
-    rating: 4.9,
-    numReviews: 3,
-  },
+
   /////////////////////////////
   {
     name: "Nike Air Max 97",
@@ -72,7 +49,7 @@ const products = [
     price: 180,
     countInStock: 6,
     rating: 5,
-    numReviews: 44,
+    numReviews: 3,
   },
   {
     name: "Nike ISPA Road Warrior",
@@ -86,6 +63,18 @@ const products = [
     rating: 3.5,
     numReviews: 10,
   },
+  {
+    name: "Kyrie 6 N7",
+    image: "/images/kyrie.jpg",
+    description:
+      "Celebrate the proud history of Native Americans and Indigenous peoples in North America with the Nike Kyrie 6 N7.",
+    brand: "Nike",
+    category: "Basketball Shoes",
+    price: 130,
+    countInStock: 0,
+    rating: 4.5,
+    numReviews: 12,
+  },
 
   {
     name: "Nike Air Force 1 '07",
@@ -97,7 +86,7 @@ const products = [
     price: 90,
     countInStock: 5,
     rating: 4.8,
-    numReviews: 3,
+    numReviews: 23,
   },
   {
     name: "Nike Air Max III",
@@ -109,7 +98,7 @@ const products = [
     price: 140,
     countInStock: 4,
     rating: 4.6,
-    numReviews: 3,
+    numReviews: 19,
   },
   ////////////////////////////////
   {
@@ -124,7 +113,7 @@ const products = [
     numReviews: 0,
   },
   {
-    name: "Nike Air Zoom Tempo NEXT%",
+    name: "Nike Air Zoom Tempo",
     image: "/images/airzoom.jpg",
     description:
       "The Nike Air Zoom Tempo NEXT% mixes durability with a design that helps push you towards your personal best.",
@@ -148,7 +137,7 @@ const products = [
     numReviews: 1,
   },
   {
-    name: "Nike React Phantom Run Flyknit 2",
+    name: "Nike 1Flyknit 2",
     image: "/images/phantom.jpg",
     description:
       "The Nike React Phantom Run Flyknit 2 offers versatility for the everyday runner.",
@@ -170,6 +159,18 @@ const products = [
     countInStock: 2,
     rating: 4.1,
     numReviews: 1,
+  },
+  {
+    name: "Nike Lunar Vapor Elite 3",
+    image: "/images/vapo.jpg",
+    description:
+      "Built for acceleration, the Nike Lunar Vapor Ultrafly Elite 3 helps keep you light on your feet. Lunarlon foam and a hybrid stud pattern give you comfort and traction.",
+    brand: "Nike",
+    category: "Training Shoes",
+    price: 100,
+    countInStock: 3,
+    rating: 4.9,
+    numReviews: 3,
   },
 ];
 
